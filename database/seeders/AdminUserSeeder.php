@@ -30,6 +30,7 @@ class AdminUserSeeder extends Seeder
             [
                 'name' => 'Admin',
                 'username' => 'admin',
+                'phone_number' => '0123456789',
                 'password' => Hash::make('12345678'),
                 'is_admin' => 1,
             ]
@@ -42,6 +43,7 @@ class AdminUserSeeder extends Seeder
             [
                 'name' => 'User',
                 'username' => 'user',
+                'phone_number' => '0123456780',
                 'password' => Hash::make('12345678'),
                 'is_admin' => 0,
             ]

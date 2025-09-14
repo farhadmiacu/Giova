@@ -36,9 +36,17 @@ return [
     */
 
     'guards' => [
+        // Backend / Admin (Breeze)
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
+        ],
+
+        // API / frontend users
+        'api' => [
+            'driver' => 'jwt',      // JWT driver
+            'provider' => 'users',  // same model as backend
+            'hash' => false,
         ],
     ],
 
